@@ -10,4 +10,3 @@ llm = ChatGroq(
     api_key = os.getenv("GROQ_API_KEY"),
 )
 
-response = llm.invoke("Explain Langchain in simple words.")

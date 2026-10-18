@@ -45,9 +45,5 @@ def get_today_date(user:str) -> str:
     logging.info("f using get_today_date tool")
     return date.today()
 
-print(get_user_purchase_history.invoke("user123"))
-print(calculate_right_refund.invoke({"user":"user123","items":[{"name":"book"},{"name":"pen"}]}))
-print(issue_refund_ticket.invoke({"user":"user123","refund_amount":"30"}))
-print(get_today_date.invoke("user123"))
     
     
