@@ -7,6 +7,11 @@ from datetime import date
 
 load_dotenv()
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s - %(message)s"
+)
+
 @tool 
 def get_user_purchase_history(user:str) -> dict:
     """this tools takes the user name and return a dictionary of what the user purchased"""
